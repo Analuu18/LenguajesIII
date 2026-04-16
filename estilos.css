@@ -1,0 +1,9 @@
+text-center{
+    background-color: greenyellow;
+    height: 100px;
+    width: 100%;
+}
+.carousel-item img {
+    height: 500px; 
+    object-fit: var(7);
+}
