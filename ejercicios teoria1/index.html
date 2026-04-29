@@ -45,7 +45,39 @@
         <button onclick="ejecutarBusqueda()">Cargar y Buscar</button>
         <div id="res-busqueda"></div>
     </div>
+<hr>
+<h1>Ejercicios de DOM</h1>
 
+<div class="ejercicio">
+    <h3>1. Crear lista dinámica</h3>
+    <button onclick="generarLista()">Generar Lista de Nombres</button>
+    <ul id="lista-nombres"></ul>
+</div>
+
+<div class="ejercicio">
+    <h3>2. Modificar contenido por ID</h3>
+    <p id="texto-original">Este texto va a cambiar.</p>
+    <button onclick="cambiarTexto('texto-original', '¡Texto modificado con éxito!')">Cambiar Texto</button>
+</div>
+
+<div class="ejercicio">
+    <h3>3. Toggle de Clases</h3>
+    <div id="caja-color" style="width:100px; height:100px; border:1px solid #000;">Haz clic en el botón</div>
+    <button onclick="alternarClase()">Alternar Estilo</button>
+</div>
+
+<div class="ejercicio">
+    <h3>4. Formulario a Array</h3>
+    <input type="text" id="input-dato" placeholder="Escribe algo...">
+    <button onclick="guardarYMostrar()">Guardar en Array</button>
+    <div id="res-formulario"></div>
+</div>
+
+<div class="ejercicio">
+    <h3>5. Generar Tarjetas</h3>
+    <button onclick="generarTarjetas()">Cargar Productos</button>
+    <div id="contenedor-tarjetas" style="display:flex; gap:10px; flex-wrap:wrap;"></div>
+</div>
     <script src="Array.js"></script>
 </body>
 </html>
