@@ -1,0 +1,19 @@
+/* Hacemos que el borde sea más grueso para que se note el color del estado */
+.card {
+    border-width: 4px !important; /* !important asegura que sobreescriba a Bootstrap */
+    border-radius: 15px;
+    overflow: hidden; /* Para que la imagen respete las esquinas redondeadas */
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Efecto visual al pasar el mouse */
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Estilo para las etiquetas de información */
+.card-text b {
+    color: #555;
+}
