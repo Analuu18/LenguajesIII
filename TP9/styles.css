@@ -1,0 +1,35 @@
+.tarjeta {
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 160px;
+}
+
+.tarjeta img {
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.tarjeta p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    border-color: #666;
+}
+
+.tarjeta.seleccionado {
+    border: 3px solid #0d6efd !important;
+    background-color: #e7f1ff !important;
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+}
