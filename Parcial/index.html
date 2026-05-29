@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial- Creacion de formularios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- text- center para centrar -->
+    <h1 class= "text-center mt-4">Formulario de Inscripcion</h1>
+    <div class="container mt-5">
+        <form id="formulario" novalidate>
+            <div class="mb-3">
+                <label for="nombre y apellido" class="form-label">Nombre y Apellido:</label>
+                <input type="text" class="form-control" id="nombre-comp" name="nombre">
+                <div class="invalid-feedback"></div>
+            </div>
+            <div class="mb-3">
+                <label for="DNI" class="form-label">DNI:</label>
+                <input type="number" class="form-control" id="DNI" name="DNI">
+                <div class="invalid-feedback"></div>
+            </div>
+            <div class="mb-3">
+                    <label for="fecha de nacimiento" class="form-label">Fecha de Nacimiento:</label>
+                    <input type="date" class="form-control" id="fecha-nac" name="fechaNacimiento">
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>  
+            <div class= "text-center mt-4">
+            <button type="submit" class="btn btn-primary" id="submit">Enviar</button>
+            </div>
+            <div id="formResult"></div>
+            <div id="errorResult" class="text-danger mt-3"></div>
+            <div id="successResult" class="text-success mt-3"></div>
+        </form>
+         <hr class="my-4">
+
+        <div id="seccion-preparacion" class="d-none">
+            <h3 class="h5 mb-3">Preguntas de progresivas</h3>
+            <button type="button" id="btn-prog" class="btn btn-secondary mb-3">Responde las siguientes preguntas</button>
+            <div id="Rtas" class="p-3 bg-light border rounded"></div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    
+
+</body>
+</html>
