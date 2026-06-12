@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Aventureros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light">
+    <div class="container mt-5" style="max-width: 600px;">
+        <h1 class="text-center text-primary mb-4">La Gran Alianza de Aventureros</h1>
+        
+        <div id="formulario-registro" class="bg-secondary p-4 rounded shadow">
+            
+            <div id="paso-1" class="pregunta-step">
+                <label for="nombre" class="form-label">1. ¿Cuál es el nombre de tu personaje?</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Mínimo 3 caracteres (solo letras)">
+                <div id="error-1" class="text-warning small mt-1"></div>
+            </div>
+
+            <div id="paso-2" class="pregunta-step d-none">
+                <label for="raza" class="form-label">2. ¿Cuál es tu raza?</label>
+                <select class="form-select" id="raza">
+                    <option value="">Selecciona tu raza...</option>
+                    <option value="Humano">Humano</option>
+                    <option value="Elfo">Elfo</option>
+                    <option value="Enano">Enano</option>
+                    <option value="Orco">Orco</option>
+                </select>
+                <div id="error-2" class="text-warning small mt-1"></div>
+            </div>
+
+            <div id="paso-3" class="pregunta-step d-none">
+                <label for="clase" class="form-label">3. ¿Cuál es tu clase?</label>
+                <select class="form-select" id="clase">
+                    <option value="">Selecciona tu clase...</option>
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Arquero">Arquero</option>
+                    <option value="Sanador">Sanador</option>
+                </select>
+                <div id="error-3" class="text-warning small mt-1"></div>
+            </div>
+
+            <div id="paso-4" class="pregunta-step d-none">
+                <label for="reino" class="form-label">4. ¿Cuál es el nombre de tu reino de origen?</label>
+                <input type="text" class="form-control" id="reino" placeholder="Mínimo 3 caracteres (solo letras)">
+                <div id="error-4" class="text-warning small mt-1"></div>
+            </div>
+
+            <div id="paso-5" class="pregunta-step d-none">
+                <label for="arma" class="form-label">5. ¿Cuál es el nombre de tu arma principal?</label>
+                <input type="text" class="form-control" id="arma" placeholder="Mínimo 3 caracteres (solo letras)">
+                <div id="error-5" class="text-warning small mt-1"></div>
+            </div>
+
+            <div id="paso-6" class="pregunta-step d-none">
+                <label for="registro" class="form-label">6. ¿Cuál es tu número de registro de aventurero?</label>
+                <input type="text" class="form-control" id="registro" placeholder="Exactamente 6 dígitos numéricos">
+                <div id="error-6" class="text-warning small mt-1"></div>
+            </div>
+
+            <div id="paso-7" class="pregunta-step d-none">
+                <label for="vida" class="form-label">7. ¿Cuántos puntos de vida tenés?</label>
+                <input type="text" class="form-control" id="vida" placeholder="Número entre 1 y 999">
+                <div id="error-7" class="text-warning small mt-1"></div>
+            </div>
+
+            <div id="paso-8" class="pregunta-step d-none">
+                <label for="batallas" class="form-label">8. ¿Cuántas batallas ganaste?</label>
+                <input type="text" class="form-control" id="batallas" placeholder="Número mayor o igual a 0">
+                <div id="error-8" class="text-warning small mt-1"></div>
+            </div>
+
+            <div id="paso-9" class="pregunta-step d-none">
+                <label for="nacimiento" class="form-label">9. ¿Cuándo nació tu personaje?</label>
+                <input type="date" class="form-control" id="nacimiento">
+                <div id="error-9" class="text-warning small mt-1"></div>
+            </div>
+
+            <div id="paso-10" class="pregunta-step d-none">
+                <label for="inicioAventura" class="form-label">10. ¿Cuándo comenzaste tu aventura?</label>
+                <input type="date" class="form-control" id="inicioAventura">
+                <div id="error-10" class="text-warning small mt-1"></div>
+            </div>
+
+        </div>
+
+        <div id="botonera" class="d-flex justify-content-between mt-4">
+            <button type="button" class="btn btn-outline-light" id="btnRetroceder" disabled>Retroceder</button>
+            <button type="button" class="btn btn-danger" id="btnReiniciar">Reiniciar</button>
+            <button type="button" class="btn btn-primary" id="btnSiguiente">Siguiente</button>
+        </div>
+
+        <div id="cartel-exito" class="alert alert-success mt-4 text-center d-none" role="alert"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

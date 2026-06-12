@@ -1,0 +1,12 @@
+
+.borde-valido {
+    border: 3px solid #28a745 !important; /* Verde */
+}
+
+.borde-invalido {
+    border: 3px solid #dc3545 !important; /* Rojo */
+}
+
+.borde-vacio {
+    border: 3px solid #6c757d !important; /* Gris */
+}
